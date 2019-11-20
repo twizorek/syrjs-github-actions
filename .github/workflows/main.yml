@@ -2,7 +2,7 @@ name: CI
 on: [push]
 jobs:
   tests:
-    runs-on: [windows]
+    runs-on: [ubuntu-latest]
     steps:
       - name: 'clone and checkout repo'
         uses: actions/checkout@v1

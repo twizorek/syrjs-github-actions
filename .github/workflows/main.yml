@@ -1,0 +1,13 @@
+name: CI
+on: [push]
+jobs:
+  tests:
+    runs-on: [windows]
+    steps:
+      - name: 'clone and checkout repo'
+        uses: actions/checkout@v1
+      - name: 'Install dependence'
+        run: npm install
+      - name: 'Run Tests'
+        run: npm run test
+      
